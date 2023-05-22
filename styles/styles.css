@@ -1,0 +1,391 @@
+/************* Presets ****************/
+
+body {
+    margin: 0px;
+    border: 0px;
+    font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.container {
+    display:grid;
+    grid-template: 1fr 4fr / 1fr 5fr;
+    height: 100vh;
+    width: 100%;
+}
+
+div div {
+    border: 1px solid #ccc;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+p {
+    padding: 0px;
+    margin: 0px;
+}
+
+
+/************* Sidebar **************/
+
+.sidebar {
+    color: white;
+    background-color: #0ea5e9;
+    grid-area: 1 / 1 / 3 / 2;
+
+}
+
+/* Dashboard and Title */
+
+.logo-words{
+    font-weight: bold;
+    padding-top: 23px;
+    font-size: 30px;
+    border: none;
+}
+
+.dash {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    border: none;
+ }
+
+
+.dash i {
+    padding-left: 10px;
+    padding-top: 13px;
+    font-size: 49px;
+}
+
+
+/* Account Info */
+
+.account-info {
+    border: none;
+}
+
+.account-list {
+    display: grid;
+    gap: 8px;
+    grid-template-columns: 1fr 3fr;
+}
+
+
+.a-info {
+    font-size: 19px;
+    padding: 0px;
+    margin: 0px;
+}
+
+.account-list i {
+    padding-left: 20px;
+}
+
+.settings {
+    border: none;
+}
+
+/*********** Header **************/
+
+/* Buttons */
+
+.button {
+  align-items: center;
+  background-color: #0ea5e9;
+  border: 0;
+  border-radius: 100px;
+  box-sizing: border-box;
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: -apple-system, system-ui, system-ui, "Segoe UI", Roboto, "Helvetica Neue", "Fira Sans", Ubuntu, Oxygen, "Oxygen Sans", Cantarell, "Droid Sans", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Lucida Grande", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  justify-content: center;
+  line-height: 20px;
+  max-width: 480px;
+  min-height: 30px;
+  min-width: 0px;
+  overflow: hidden;
+  padding: 0px;
+  padding-left: 35px;
+  padding-right: 35px;
+  text-align: center;
+  touch-action: manipulation;
+  transition: background-color 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s, box-shadow 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s, color 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s;
+  user-select: none;
+  -webkit-user-select: none;
+  vertical-align: middle;
+  margin-left: 15px;
+  margin-top: 20px;
+}
+
+.button:hover,
+.button:focus { 
+  background-color: #16437E;
+  color: #ffffff;
+}
+
+.button:active {
+  background: #09223b;
+  color: rgb(255, 255, 255, .7);
+}
+
+.button:disabled { 
+  cursor: not-allowed;
+  background: rgba(0, 0, 0, .08);
+  color: rgba(0, 0, 0, .3);
+}
+
+
+/* Header */
+
+.header {
+    background-color: white;
+    grid-area: 1 / 2 / 2 / 3;
+    display: grid;
+    grid-template-rows: 0.55fr 1fr;
+    padding-left: 22px;
+}
+
+
+/* Header Top */
+
+.header-top {
+    border: none;
+    display: grid;
+    grid-template-columns: 3.5fr 1fr;
+
+}
+
+
+/* Top Left */
+
+input[type="text"] {
+    height: 20px;
+    padding-left: 8px;
+    border-radius: 15px;
+    width: 700px;
+}
+
+.header-top-left {
+    border: none;
+    display: grid;
+    grid-template-columns: 0.1fr 3fr;
+
+}
+
+.header-top-left i {
+    padding-top: 16px;
+}
+
+.input { 
+    border: none;
+    padding-left: 10px;
+    padding-top: 15px;
+
+}
+
+/* Top Right */
+
+.header-top-right {
+    border: none;
+    display: grid;
+    grid-template-columns: 0.5fr 0.5fr 2fr;
+}
+
+.header-top-right i {
+    padding-top: 12px;
+    font-size: 25px;
+}
+
+.top-right-logo {
+    padding-top: 6px;
+    height: 35px
+
+}
+
+.username {
+    border: none;
+    font-weight: bold;
+    margin-top: 0px;
+    padding-left: 6px;
+    padding-top: 14px;
+}
+
+.logo {
+    height: 30px;
+}
+
+
+/* Header Bottom */
+
+.header-bottom {
+    border: none;
+    margin-top: 20px;
+    height: 60px;
+    display: grid;
+    grid-template-columns: 1.85fr 1fr;
+}
+ 
+
+/* Bottom Left */
+
+.header-bottom-right { /* should have been left */
+    border: none;
+    display: grid;
+    grid-template-columns: 0.33fr 4fr;
+    gap: 8px;
+}
+
+.bigger-logo {
+    height: 70px;
+}
+
+.block-para {
+    border: none;
+    display: grid;
+    grid-template-rows: 0.5fr 1fr;
+    gap: 4px;
+    padding-left: 4px;
+    padding-top: 14px;
+}
+
+.preface-greeting, .greeting {
+    border: none;
+    font-weight: bold;
+}
+
+.preface-greeting {
+    font-size: 12px;
+}
+
+.greeting {
+    font-size: 20px;
+
+}
+
+.header-bottom-left {
+    border: none;
+    padding-top: 10px;
+}
+
+
+/************ Main Content *************/
+
+.main-content {
+    border: none;
+    margin-top: 0px;
+    background-color:#f4f4f5;
+    grid-area: 2/2/3/3;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+
+.projects {
+    border: none;
+    padding-left: 10px;
+
+}
+
+.main-body-title {
+    border: none;
+    font-weight: bold;
+    padding-top: 15px;
+    padding-bottom: 12px;
+
+}
+
+.project-title {
+    padding-bottom: 40px;
+}
+
+.project-body {
+    border: none;
+    padding-left: 50px;
+    gap: 30px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
+.project {
+    border: none;
+    background-color: white;
+    padding-left: 20px;
+    padding-right: 10px;
+    box-shadow: -10px 10px 0px 0px rgba(74,144,226,1),
+-20px 20px 0px 0px rgba(74,144,226,0.6),
+-30px 30px 0px 0px rgba(74,144,226,0.39),
+-40px 40px 0px 0px rgba(74,144,226,0.1);
+    display: grid;
+    width: 350px;
+    grid-template-rows: 4fr 1fr;
+}
+
+
+/* Project Top */
+
+.project-top {
+    border: none;
+}
+
+.title {
+    font-weight: bold;
+    padding-top: 20px;
+    padding-bottom: 8px;
+}
+
+.project-top .body {
+    font-size: 13px;
+}
+
+
+
+/* Project Bottom */
+
+.project-bottom {
+    border: none;
+    display: grid;
+    padding-left: 50px;
+    grid-template-columns: 2fr 0.75fr ;
+}
+
+
+.project-bottom-left, .project-bottom-right {
+    border: none;
+}
+
+
+/* Other Partials */
+.other-info {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+}
+
+.annoucement-body {
+    margin-left: 40px;
+    width: 250px;
+    box-shadow: -10px 10px 0px 0px rgba(74,144,226,1),
+-20px 20px 0px 0px rgba(74,144,226,0.6),
+-30px 30px 0px 0px rgba(74,144,226,0.39),
+-40px 40px 0px 0px rgba(74,144,226,0.1);
+}
+
+.top-body-title {
+    font-weight: bold;
+}
+
+/* Trending */
+.trend-body {
+    display: grid;
+    grid-template-rows: repeat(4,1fr);
+}
+
+.trend {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+}
+
